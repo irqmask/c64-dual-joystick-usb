@@ -1,0 +1,195 @@
+( pcb2gcode 1.2.1 )
+
+( This file uses 7 drill bit sizes. )
+( Bit sizes: [0.508mm] [0.686mm] [0.813mm] [1.016mm] [2.301mm] [2.499mm] [3.5mm] )
+
+G94       (Millimeters per minute feed rate.)
+G21       (Units == Millimeters.)
+G90       (Absolute coordinates.)
+S10000     (RPM spindle speed.)
+
+G00 Z10.00000 (Retract)
+T1
+M5      (Spindle stop.)
+M6      (Tool change.)
+(MSG, Change tool bit to drill size 0.50800 mm)
+M0      (Temporary machine stop.)
+M3      (Spindle on clockwise.)
+
+G81 R5.00000 Z-2.50000 F400.00000 X-8.63 Y-215.32
+X-8.63 Y-217.82
+
+G00 Z10.00000 (Retract)
+T2
+M5      (Spindle stop.)
+M6      (Tool change.)
+(MSG, Change tool bit to drill size 0.68600 mm)
+M0      (Temporary machine stop.)
+M3      (Spindle on clockwise.)
+
+G81 R5.00000 Z-2.50000 F400.00000 X-12.44 Y-231.81
+X-17.52 Y-224.19
+X-17.52 Y-226.73
+X-17.52 Y-229.27
+X-20.06 Y-231.81
+X-21.33 Y-214.157
+X-21.33 Y-216.189
+X-22.6 Y-231.81
+X-23.87 Y-214.157
+X-23.87 Y-216.189
+X-25.14 Y-221.65
+X-25.14 Y-229.27
+X-27.68 Y-221.65
+X-27.68 Y-224.19
+X-27.68 Y-226.73
+X-27.68 Y-229.27
+X-30.22 Y-219.11
+X-30.22 Y-226.73
+X-32.76 Y-208.95
+X-32.76 Y-211.49
+X-32.76 Y-219.11
+X-32.76 Y-226.73
+X-32.76 Y-231.81
+X-35.3 Y-219.11
+X-35.3 Y-226.73
+X-35.3 Y-239.43
+X-37.84 Y-219.11
+X-37.84 Y-226.73
+X-37.84 Y-229.27
+X-37.84 Y-234.35
+X-37.84 Y-239.43
+X-40.38 Y-215.3
+X-40.38 Y-219.11
+X-40.38 Y-226.73
+X-42.92 Y-208.95
+X-42.92 Y-211.49
+X-42.92 Y-215.3
+X-42.92 Y-219.11
+X-42.92 Y-226.73
+X-42.92 Y-229.27
+X-42.92 Y-234.35
+X-42.92 Y-239.43
+X-45.46 Y-205.14
+X-45.46 Y-215.3
+X-45.46 Y-219.11
+X-45.46 Y-226.73
+X-45.46 Y-229.27
+X-45.46 Y-239.43
+X-48 Y-219.11
+X-48 Y-226.73
+X-50.54 Y-219.11
+X-50.54 Y-226.73
+X-53.08 Y-219.11
+X-53.08 Y-226.73
+X-55.62 Y-219.11
+X-55.62 Y-226.73
+X-58.16 Y-214.03
+X-58.16 Y-219.11
+X-58.16 Y-226.73
+X-58.16 Y-231.81
+X-59.43 Y-211.49
+X-59.43 Y-234.35
+X-60.7 Y-214.03
+X-60.7 Y-219.11
+X-60.7 Y-226.73
+X-60.7 Y-231.81
+X-61.97 Y-211.49
+X-61.97 Y-234.35
+X-63.24 Y-214.03
+X-63.24 Y-219.11
+X-63.24 Y-226.73
+X-63.24 Y-231.81
+X-64.51 Y-211.49
+X-64.51 Y-234.35
+X-65.78 Y-214.03
+X-65.78 Y-231.81
+X-67.05 Y-211.49
+X-67.05 Y-234.35
+X-68.32 Y-214.03
+X-68.32 Y-224.19
+X-68.32 Y-226.73
+X-68.32 Y-231.81
+X-78.48 Y-224.19
+X-78.48 Y-226.73
+
+G00 Z10.00000 (Retract)
+T3
+M5      (Spindle stop.)
+M6      (Tool change.)
+(MSG, Change tool bit to drill size 0.81300 mm)
+M0      (Temporary machine stop.)
+M3      (Spindle on clockwise.)
+
+G81 R5.00000 Z-2.50000 F400.00000 X-32.76 Y-234.35
+X-32.76 Y-241.97
+
+G00 Z10.00000 (Retract)
+T4
+M5      (Spindle stop.)
+M6      (Tool change.)
+(MSG, Change tool bit to drill size 1.01600 mm)
+M0      (Temporary machine stop.)
+M3      (Spindle on clockwise.)
+
+G81 R5.00000 Z-2.50000 F400.00000 X-25.14 Y-239.43
+X-27.68 Y-239.43
+X-30.22 Y-239.43
+X-83.56 Y-220.38
+X-83.56 Y-222.92
+X-83.56 Y-225.46
+X-86.1 Y-220.38
+X-86.1 Y-222.92
+X-86.1 Y-225.46
+
+G00 Z10.00000 (Retract)
+T5
+M5      (Spindle stop.)
+M6      (Tool change.)
+(MSG, Change tool bit to drill size 2.30100 mm)
+M0      (Temporary machine stop.)
+M3      (Spindle on clockwise.)
+
+G81 R5.00000 Z-2.50000 F400.00000 X-16.601 Y-211.49
+X-28.599 Y-211.49
+
+G00 Z10.00000 (Retract)
+T6
+M5      (Spindle stop.)
+M6      (Tool change.)
+(MSG, Change tool bit to drill size 2.49900 mm)
+M0      (Temporary machine stop.)
+M3      (Spindle on clockwise.)
+
+G81 R5.00000 Z-2.50000 F400.00000 X-11.99 Y-207.39
+X-11.99 Y-237.789
+X-83.189 Y-207.39
+X-83.189 Y-237.789
+
+G00 Z10.00000 (Retract)
+T7
+M5      (Spindle stop.)
+M6      (Tool change.)
+(MSG, Change tool bit to drill size 3.50000 mm)
+M0      (Temporary machine stop.)
+M3      (Spindle on clockwise.)
+
+G81 R5.00000 Z-2.50000 F400.00000 X-50.741 Y-213.029
+X-50.741 Y-232.811
+X-75.739 Y-213.029
+X-75.739 Y-232.811
+
+G00 Z10.00000 (All done -- retract)
+
+M5      (Spindle off.)
+M9      (Coolant off.)
+M2      (Program end.)
+
+
+
+
+
+( pcb2gcode 1.2.1 )
+(16  27  120  131  149  160  173 )
+
+
+
