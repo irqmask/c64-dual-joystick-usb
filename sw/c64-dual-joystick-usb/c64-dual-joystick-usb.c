@@ -319,8 +319,6 @@ usbMsgLen_t usbFunctionSetup(uchar data[8])
  */
 int main (void)
 {
-    char send_joy1 = 0, send_joy2 = 0;
-
     wdt_enable(WDTO_1S);
 
     joy_init(); 
@@ -336,28 +334,19 @@ int main (void)
         wdt_reset();
         usbPoll();
         
-        joy_update();
         // event occurred on joystick 1
-        if (joy_event(1)) {
-            encode_report_joystick1();
-            send_joy1 = 1;
-        }
+        encode_report_joystick1();
 
         // event occurred on joystick 2
-        if (joy_event(2)) {
-            encode_report_joystick2();
-            send_joy2 = 1;
-        }
+        encode_report_joystick2();
 
         // event occurred on joystick 1?
-        if (usbInterruptIsReady() && send_joy1 > 0) {
+        if (usbInterruptIsReady()) {
             usbSetInterrupt(l_report_buffer1, sizeof(l_report_buffer1));
-            send_joy1 = 0;
         }
         // event occurred on joystick 2?
-        if (usbInterruptIsReady3() && send_joy2 > 0) {
+        if (usbInterruptIsReady3()) {
             usbSetInterrupt3(l_report_buffer2, sizeof(l_report_buffer2));
-            send_joy2 = 0;
         }
     }
 }
